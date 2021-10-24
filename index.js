@@ -109,4 +109,30 @@ function cc(card) {
 
 cc(2); cc(3); cc(7); cc('K'); cc('A');
 
-// 
+// Создание объектов JavaScript
+
+var myDog = {
+  // Only change code below this line
+  name: "John",
+  legs: 4,
+  tails: 1,
+  friends: ["Dos", "Bob"]
+  
+  // Only change code above this line
+  };
+
+  // Доступ к свойствам объекта с помощью точечной записи
+
+  // Setup
+var testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+
+// Only change code below this line
+
+var hatValue = testObj.hat;      // Change this line
+var shirtValue = testObj.shirt;    // Change this line
+
+// Доступ к свойствам объекта с помощью скобок
