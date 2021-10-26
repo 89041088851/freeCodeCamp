@@ -432,4 +432,41 @@ function convertToInteger(str) {
 convertToInteger("10011");
 
 // Используйте Условный (троичный) оператор
+function checkEqual(a, b) {
+  return a == b ? 'Equal' : 'Not Equal';
+}
 
+checkEqual(1, 2);
+
+// Используйте Несколько Условных (Троичных) Операторов
+
+function checkSign(num) {
+  return (num === 10) ? 'positive'
+  : (num === -12) ? 'negative'
+  : 'zero'
+}
+
+checkSign(10);
+
+// Используйте рекурсию для создания обратного отсчета
+function countdown(n) {
+  if (n < 1) {
+    return [];
+  }
+  if (n === 1) {
+    return [1];
+  }
+  return [n].concat(countdown(n-1));
+}
+
+console.log(countdown(0));
+console.log(countdown(1));
+console.log(countdown(10));
+
+// Используйте рекурсию для создания диапазона чисел
+
+function rangeOfNumbers(startNum, endNum) {
+  return startNum === endNum
+    ? [startNum]
+    : [...rangeOfNumbers(startNum, endNum - 1), endNum ];
+}
